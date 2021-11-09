@@ -1,0 +1,26 @@
+package selfProgramming;
+import java.util.Scanner;
+public class Withdraw {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanMe = new Scanner(System.in);
+		
+		System.out.println("Enter your balance: ");
+		double balance = scanMe.nextDouble();
+		
+		System.out.println("Enter the amount you want to withdraw: ");
+		double amount = scanMe.nextDouble();
+		
+		
+		if  ((amount <= 1000.0) || (amount <= balance)) {
+			balance = balance - amount;
+			System.out.printf("Account new balance = %.2f" , balance);
+		}
+		else {
+			System.out.println("Sorry your request had been rejected");
+		}
+
+	}
+
+}
