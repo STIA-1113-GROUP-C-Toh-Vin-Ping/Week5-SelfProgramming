@@ -1,10 +1,13 @@
 package selfProgramming;
-
+import java.util.Scanner;
 public class Day {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int day = 5;
+		Scanner scanMe = new Scanner(System.in);
+		
+		 System.out.println("Enter the number of your day: ");
+		int day = scanMe.nextInt();
 		switch (day) {
 		  case 1:
 		    System.out.println("Monday");
