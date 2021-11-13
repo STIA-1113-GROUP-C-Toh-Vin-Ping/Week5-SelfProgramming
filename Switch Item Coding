@@ -1,0 +1,100 @@
+package selfProgramming;
+import java.util.Scanner;
+public class SwitchItem {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanMe = new Scanner(System.in);
+		
+		System.out.println("Enter the number of items: ");
+		int item= scanMe.nextInt();
+		switch (item) {
+		case 1:
+		System.out.println("Enter the price of item: RM");
+		double a1 = scanMe.nextDouble();
+		System.out.println("Enter the quantity of item: ");
+		int quantity1= scanMe.nextInt();
+		double total1 = a1*quantity1;
+		if (total1 < 100.00) {
+			double discountreceived = (total1*10)/100;
+			double x = total1 - discountreceived;
+		       System.out.printf("Total price       : RM%.2f%n" , total1);
+		       System.out.printf("Discount received : RM%.2f%n" , discountreceived);
+		       System.out.printf("Price to be paid  : RM%.2f%n" , x);
+		}
+		       else if (total1 > 100.00){
+		    		double discountreceived = (total1*20)/100;
+				double x = total1 - discountreceived;
+			       System.out.printf("Total price       : RM%.2f%n" , total1);
+			       System.out.printf("Discount received : RM%.2f%n" , discountreceived);
+			       System.out.printf("Price to be paid  : RM%.2f%n" , x);
+		       }
+		break;
+		
+		case 2:
+			System.out.println("Enter the price of first item: RM");
+			double a2 = scanMe.nextDouble();
+			System.out.println("Enter the quantity of first item: ");
+			int quantitya2= scanMe.nextInt();
+			double total2 = a2*quantitya2;
+			
+			System.out.println("Enter the price of second item: RM");
+			double b2 = scanMe.nextDouble();
+			System.out.println("Enter the quantity of second item: ");
+			int quantityb2= scanMe.nextInt();
+			double total3 = b2*quantityb2;
+			
+			double totalcase2= total2+total3;
+			if (totalcase2 < 100.00) {
+				double discountreceived = (totalcase2*10)/100;
+				double x = totalcase2 - discountreceived;
+			       System.out.printf("Total price       : RM%.2f%n" , totalcase2);
+			       System.out.printf("Discount received : RM%.2f%n" , discountreceived);
+			       System.out.printf("Price to be paid  : RM%.2f%n" , x);
+			}
+			       else if (totalcase2 > 100.00){
+			    		double discountreceived = (totalcase2*20)/100;
+					double x = totalcase2 - discountreceived;
+				       System.out.printf("Total price       : RM%.2f%n" , totalcase2);
+				       System.out.printf("Discount received : RM%.2f%n" , discountreceived);
+				       System.out.printf("Price to be paid  : RM%.2f%n" , x);
+			       }
+			break;
+			
+		case 3:
+			System.out.println("Enter the price of first item: RM");
+			double a3 = scanMe.nextDouble();
+			System.out.println("Enter the quantity of first item: ");
+			int quantitya3= scanMe.nextInt();
+			double totala3 = a3*quantitya3;
+			
+			System.out.println("Enter the price of second item: RM");
+			double b3 = scanMe.nextDouble();
+			System.out.println("Enter the quantity of second item: ");
+			int quantityb3= scanMe.nextInt();
+			double totalb3 = b3*quantityb3;
+			
+			System.out.println("Enter the price of third item: RM");
+			double c3 = scanMe.nextDouble();
+			System.out.println("Enter the quantity of third item: ");
+			int quantityc3= scanMe.nextInt();
+			double totalc3 = c3*quantityc3;
+			
+			double totalcase3 = totala3+totalb3+totalc3;
+			if (totalcase3 < 100.00) {
+				double discountreceived = (totalcase3*10)/100;
+				double x = totalcase3 - discountreceived;
+			       System.out.printf("Total price       : RM%.2f%n" , totalcase3);
+			       System.out.printf("Discount received : RM%.2f%n" , discountreceived);
+			       System.out.printf("Price to be paid  : RM%.2f%n" , x);
+			}
+			       else if (totalcase3 > 100.00){
+			    		double discountreceived = (totalcase3*20)/100;
+					double x = totalcase3 - discountreceived;
+				       System.out.printf("Total price       : RM%.2f%n" , totalcase3);
+				       System.out.printf("Discount received : RM%.2f%n" , discountreceived);
+				       System.out.printf("Price to be paid  : RM%.2f%n" , x);
+			       }
+		}
+	}
+}
