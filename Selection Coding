@@ -1,0 +1,44 @@
+		Scanner scanMe = new Scanner(System.in);
+		
+		System.out.println("Enter your first subject: ");
+		String S1 = scanMe.nextLine();
+		System.out.println("Enter your second subject: ");
+		String S2 = scanMe.nextLine();
+		
+		
+		 System.out.println("Enter your " + S1 + " Score: ");
+			double s1 = scanMe.nextDouble();
+		 System.out.println("Enter your " + S2 + " Score: ");
+		    double s2 = scanMe.nextDouble();
+		    
+		
+		if (s1>= 50.00) {
+			System.out.println("Your " + S1 + " is pass.");
+		}
+		else {
+			System.out.println("Your " + S1 + " is fail.");
+		}
+		if (s2>= 50.00) {
+			System.out.println("Your " + S2 + " is pass.");
+		}
+		else {
+			System.out.println("Your " + S2 + " is fail.");
+		}
+		if((s1<50)&&(s2<50)){
+			System.out.println("Your " + S1 + " and " + S2 + " are fail.");
+			
+		}
+		
+		if(s1>s2) {
+			System.out.println("Your " + S1 + " score is higher than " + S2 +  " score.");
+		}
+		if(s2>s1){
+			System.out.println("Your " + S2 + " score is higher than " + S1 +  " score.");
+		}
+		else{
+			System.out.println("Your " + S1 + " score and " + S2 + " score is the same.");
+		}
+	}
+
+}
+
